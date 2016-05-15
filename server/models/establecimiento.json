@@ -1,0 +1,147 @@
+{
+  "name": "Establecimiento",
+  "plural":"Establecimientos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "TipoIdent": {
+      "type": "string",
+      "required": true
+    },
+    "NoIdent": {
+      "type": "string",
+      "required": true
+    },
+    "IdentDV": {
+      "type": "string",
+      "required": true
+    },
+    "Matricula": {
+      "type": "string",
+      "required": true
+    },
+    "FechaMatric": {
+      "type": "date",
+      "required": true
+    },
+    "FechaFinMatric": {
+      "type": "date"
+    },
+    "Observac": {
+      "type": "string"
+    },
+    "NomComerc": {
+      "type": "string",
+      "required": true
+    },
+    "DirComerc": {
+      "type": "string",
+      "required": true
+    },
+    "DirEstandar": {
+      "type": "string"
+    },
+    "DirNotif": {
+      "type": "string"
+    },
+    "Tels": {
+      "type": "string",
+      "required": true
+    },
+    "Mail": {
+      "type": "string"
+    },
+    "Pagweb": {
+      "type": "string"
+    },
+    "TipoIdentProp": {
+      "type": "string",
+      "required": true
+    },
+    "NoIdentProp": {
+      "type": "string",
+      "required": true
+    },
+    "IdentDVProp": {
+      "type": "string",
+      "required": true
+    },
+    "ApellidosProp": {
+      "type": "string",
+      "required": true
+    },
+    "NombresProp": {
+      "type": "string"
+    },
+    "MatriculaProp": {
+      "type": "string",
+      "required": true
+    },
+    "TipoIdentRepl": {
+      "type": "string"
+    },
+    "NoIdentRepl": {
+      "type": "string"
+    },
+    "IdentDVRepl": {
+      "type": "string"
+    },
+    "ApellidosRepl": {
+      "type": "string"
+    },
+    "ciiu1": {
+      "type": "string"
+    },
+    "ciiu2": {
+      "type": "string"
+    },
+    "ciiu3": {
+      "type": "string"
+    },
+    "actividad_economica": {
+      "type": "string"
+    },
+    "localidad": {
+      "type": "string",
+      "required": true
+    },
+    "UPZ": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "alarmas": {
+      "type": "hasMany",
+      "model": "Alarma",
+      "foreignKey": ""
+    },
+    "visita": {
+      "type": "hasMany",
+      "model": "Visita",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

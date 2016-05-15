@@ -1,0 +1,11 @@
+{
+  "pg": {
+    "host": "aws-us-east-1-portal.18.dblayer.com",
+    "port": 10238,
+    "database": "compose",
+    "password": "REXNMPAQWEFKDKNK",
+    "name": "pg",
+    "user": "admin",
+    "connector": "postgresql"
+  }
+}

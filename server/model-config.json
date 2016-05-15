@@ -1,0 +1,72 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "Entidad": {
+    "dataSource": "pg",
+    "public": true
+  },
+  "Atributo": {
+    "dataSource": "pg",
+    "public": true
+  },
+  "Dependencia": {
+    "dataSource": "pg",
+    "public": true
+  },
+  "Item_checkeo": {
+    "dataSource": "pg",
+    "public": true
+  },
+  "Visita": {
+    "dataSource": "pg",
+    "public": true
+  },
+  "Alarma": {
+    "dataSource": "pg",
+    "public": true
+  },
+  "atributo_visita": {
+    "dataSource": "pg",
+    "public": true
+  },
+  "respuesta_item_checkeo": {
+    "dataSource": "pg",
+    "public": true
+  },
+  "Funcionario": {
+    "dataSource": "pg",
+    "public": true
+  },
+  "Establecimiento": {
+    "dataSource": "pg",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "pg",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "pg",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "pg",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "pg",
+    "public": false
+  }
+}
